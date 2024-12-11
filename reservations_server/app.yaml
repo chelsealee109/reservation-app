@@ -1,0 +1,38 @@
+#runtime: nodejs18  # Use the Node.js runtime you're using
+#entrypoint: node server.js  # The entry point to your server
+
+#handlers:
+  # Serve static assets (JS, CSS) from the `my-project-client/src` folder
+#  - url: /src
+#    static_dir: my-project-client/src
+
+  # Serve the main HTML file from the `my-project-client/public` folder
+#  - url: /
+#    static_files: my-project-client/public/index.html
+#    upload: my-project-client/public/index.html
+
+runtime: nodejs18
+instance_class: F1
+
+#handlers:
+  # Serve `index.html` for requests to `/`
+#  - url: /
+#    static_files: my-project-client/build/index.html
+#    upload: my-project-client/build/index.html
+
+  # Serve all static files from the `build` directory
+#  - url: /(.*)
+#    static_files: my-project-client/build/\1
+#    upload: my-project-client/build/(.*)
+
+
+handlers:
+  # Serve static files from the build directory
+  - url: /static
+    static_dir: build/static
+
+  # Serve the React app's index.html for all other paths
+  - url: /.*
+    script: auto
+    secure: always
+
