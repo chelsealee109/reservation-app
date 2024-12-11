@@ -1,0 +1,216 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Container for centering the reservation list */
+.reservation-container {
+  max-width: 1200px; /* Control the width of the table */
+  margin: 0 auto;
+  padding: 50px;
+  
+}
+
+/* Header styling to align with the rows */
+.reservation-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: bold;
+  color: #b61515;
+  background-color: #f0f0f0;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.reservation-header div {
+  flex: 1; /* Match width with the input fields */
+  text-align: center;
+}
+
+/* Reservation list styling */
+.reservation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+/* Individual reservation entry styling */
+.reservation-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Styling for inputs to match header */
+.reservation-item input[type="text"],
+.reservation-item input[type="number"],
+.reservation-item input[type="date"],
+.reservation-item input[type="time"] {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 14px;
+  flex: 0.5; /* Ensures alignment with header columns */
+}
+
+.reservation-item input[disabled] {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Button styling */
+.reservation-item button {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 5px; /* Add spacing between buttons */
+}
+
+.reservation-item button:hover {
+  background-color: #ddd;
+}
+
+.sort-container {
+  display: flex;
+  gap: 5px; /* Add spacing between "Sort By" and the dropdown */
+  margin-top: -50px;
+  margin-left: 900px;
+
+}
+.sort-container select {
+  padding: 10px; /* Optional: Improve dropdown appearance */
+  border-radius: 4px;
+  height: 40px
+}
+
+.search-container {
+  display: flex;
+  gap: 10px; /* Add spacing between "Sort By" and the dropdown */
+  margin-top: -50px;
+  margin-left: 10px;
+
+}
+.search-container input {
+  padding: 10px; 
+  border-radius: 4px;
+  height: 20px;
+  width: 150px;
+}
+
+.add-restaurant-container {
+  display: flex;
+  gap: 10px; /* Add spacing between "Sort By" and the dropdown */
+  margin-top: 30px;
+  /*margin-left: 400px;*/
+  justify-content: center;
+
+}
+
+.add-restaurant-container select {
+  padding: 10px; 
+  border-radius: 4px;
+  height: 40px;
+  width: 200px;
+}
+
+.restaurant-header {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  gap: 80px; /* Space between each column */
+  align-items: flex-start; /* Align items to the top */
+  font-weight: bold;
+  color: #9A7E6F;
+  background-color: #e9eed9c9;
+  justify-content: center;
+}
+
+.header-item {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.header-label {
+  margin-bottom: 10px; 
+  text-transform: uppercase; 
+}
+
+.header-value {
+  font-size: 18px;
+  font-weight: normal;
+  color: #333; 
+}
+
+.reservation-container {
+  max-width: 1200px; /* Control the width of the table */
+  margin: 0 auto;
+  padding: 50px;
+  
+}
+
+.my-restaurant-container {
+  max-width: 1200px; /* Control the width of the table */
+  margin: 0 auto;
+  padding: 50px;
+  
+}
+/* Header styling to align with the rows */
+.my-restaurant-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: bold;
+  color: #356aa7;
+  background-color: #f0f0f0;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.my-restaurant-header div {
+  flex: 1; /* Match width with the input fields */
+  text-align: center;
+}
